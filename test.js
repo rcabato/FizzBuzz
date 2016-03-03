@@ -2,10 +2,13 @@ var i = 0;
 function counter() {
 	i++;
 	var retthis = "";
-	if (i % 3 == 0) {
-		retthis = "Fizz"
+	if ((i % 3 == 0) && (i % 4 == 0)){
+		retthis += "Fizz Buzz"
 	}
-	if (i % 4 == 0) {
+	else if (i % 3 == 0) {
+		retthis += "Fizz"
+	}
+	else if (i % 4 == 0) {
 		retthis += "Buzz"
 	}
 	else retthis = i.toString();
